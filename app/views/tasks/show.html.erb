@@ -1,8 +1,8 @@
-<h1><%= @tasks.title %></h1>
+<h1><%= @task.title %></h1>
 
-<p> <%= @tasks.details %> </p>
+<p> <%= @task.details %> </p>
 
-<% if @tasks.completed? %>
+<% if @task.completed? %>
   <p>
     <i class="far fa-check-square"></i>
     This task is completed
@@ -18,4 +18,4 @@
 
 <br>
 
-<p><%= link_to "Edit task", edit_path %></p>
+<p><%= link_to "Edit task", edit_task_path %></p>
